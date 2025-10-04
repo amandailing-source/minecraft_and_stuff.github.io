@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="quiz.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+              
+             <!-- responsive nav bar-->
+   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: orange;">
+      <a class="navbar-brand" href="index.html"> Updates </a>
+
+      <!-- drop-down menu button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="https://www.minecraft.net/en-us"> WEB </a>
+            </li>
+         
+            <li class="nav-item">
+               <a class="nav-link" href="animation.html"> ANIMATION </a>
+            </li>
+
+
+            <li class="nav-item">
+               <a class="nav-link" href="QUIZ.html"> QUIZ </a>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"> ??? </a>
+            </li>
+
+         </ul>
+      </div>
+   </nav>
+
+
+
+
+    <div class="quiz-title">
+        Test Your Knowledge
+    </div>
+     
+    <div class="quiz-container">
+         <!-- progress bar -->
+         <div class="progress-bar-bg">
+             <div class="progress-bar-fill" id="progress-bar-fill"></div>
+         </div>
+
+         <!-- question label -->
+         <div class="question"  id="question">
+             PRESS START TO BEGIN
+         </div>
+
+         <!-- difficulty level menu --> 
+         <select class="drop-down" id="drop-down">
+            <option value="1"> EASY 😊 </option>
+            <option value="2"> HARD 🤯🤯🤯🤯 </option>
+            <option value="3"> DEMON 😈😈😈😈😈😈😈😈 </option>
+         </select>
+
+         <!-- option buttons --> 
+         <div class="option-container" id="option-container">
+         </div>
+
+
+         <!-- score/feedback label -->
+         <div class="score-label" id="score-label">
+            You Scored 0 point(s)
+         </div>
+         
+         
+         <div class="feedback-label" id="feedback-label">
+            N.A
+         </div>
+
+
+
+
+
+         <!-- start button -->
+          <button class="start-btn" id="start-btn"> START </button>
+      </div>
+
+      <div class="timer">
+          <span id="timer-label" >15</span>
+      </div>
+
+
+      <!-- bgm selector-->
+      <select class="bgm-selector" id="bgm-selector">
+         <option value="kahoot.mp3"> kahoot music </option>
+         <option value="C418.mp3"> sweden </option>
+         <option value="C41.mp3"> area math </option>
+      </select>
+
+      <button class="music-btn" id="music-btn"> 🔈 music on </button>
+         
+
+    <script src="script.js"></script>    
+</body>
+</html>

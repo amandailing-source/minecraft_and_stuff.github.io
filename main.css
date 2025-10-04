@@ -1,0 +1,110 @@
+#main-title {
+    background-color: orange;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+#main-pic {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 30px;
+    border: solid 10px lightslategray;
+    border-radius: 50px;
+}
+
+#main-table {
+    margin: auto;
+    background-color: lightgoldenrodyellow;
+    width: 90%;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+}
+
+#main-table td {
+    padding: 20px;
+}
+
+#header-row {
+    background-color: orange minecraft;
+    color: white;
+}
+
+iframe {
+    margin: auto;
+    display:  block;
+    margin-top: 30px;
+}
+
+.fade-in {
+    background-color:rgb(255, 162, 0);
+    font-size: 36px;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    color: white;
+    opacity: 0;
+    animation: fade-in-anim 1s ease-in-out forwards ;
+    height: 70px;
+    animation-delay: 2s;
+}
+
+@keyframes fade-in-anim {
+    from {
+        opacity: 0;
+        font-size: 0px;
+    }
+
+    to {
+        opacity: 100;
+        font-size: 36px;
+    }
+}
+
+.color-changing {
+    background-color: orange;
+    font-size: 36px;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    color: white;
+    height: 70px;
+    animation: color-changing-anim 2s 1;
+    
+}
+
+@keyframes color-changing-anim {
+    from {
+        background-color: black;
+        color: black;
+    }
+
+    to {
+        background-color: orange;
+        color: white;
+    }
+}
+
+.glide-in-out img {
+    animation: glide-x-anim 5s ease-in-out infinite;
+    width: 30%;
+    margin-top: -50px;
+}
+
+@keyframes glide-x-anim {
+    from {
+         transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(1000%);
+    }
+}
+
+
+
+
